@@ -32,6 +32,20 @@
         const close = document.querySelector(".sidebar");
         close.style.display = "none";
       }
+
+      function validateLogin() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+      if (username === "Admin" && password === "Admin") {
+        alert("Login berhasil!");
+        window.location.href = "homepage.html"; 
+        return false;
+      } else {
+        document.getElementById("error-message").style.display = "block";
+        return false;
+      }
+    }
     </script>
   </body>
 </html>
