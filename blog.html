@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog - Andy07</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li class="hide" onclick="closeSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="black"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./forum.html">Forum</a></li>
+      </ul>
+      <ul>
+        <li><a class="logo" href="./index.html">Andy07</a></li>
+        <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="./blog.html">Blog</a></li>
+        <li class="hideOnMobile"><a href="./products.html">Products</a></li>
+        <li class="hideOnMobile"><a href="./about.html">About</a></li>
+        <li class="hideOnMobile"><a href="./forum.html">Forum</a></li>
+        <li class="hide" onclick="toggleSidebar()">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="black"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="blog">
+      <div class="blog-container">
+        <article class="blog-post">
+          <h2>Judul Artikel 1</h2>
+          <p class="date">Oktober 27, 2024</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            quasi molestiae eum architecto id sapiente consequuntur, praesentium
+            ipsa reiciendis neque maxime, maiores, aspernatur dolores mollitia?
+            Enim dolorem laudantium ut quidem. Dolor debitis ipsam fugit ad a
+            qui dicta, repellendus nulla.
+          </p>
+          <a href="#" class="read-more">Read more</a>
+        </article>
+        <article class="blog-post">
+          <h2>Judul Artikel 2</h2>
+          <p class="date">Oktober 20, 2024</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus itaque tempora enim illo in incidunt quae neque eos
+            eveniet. Tenetur dolore natus laudantium earum omnis? Sequi
+            praesentium libero repudiandae voluptatem velit, nobis et impedit
+            assumenda, enim tempora corrupti nulla labore.
+          </p>
+          <a href="#" class="read-more">Read more</a>
+        </article>
+        <!-- Tambahkan artikel lain di sini -->
+      </div>
+    </section>
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function closeSidebar() {
+        const close = document.querySelector(".sidebar");
+        close.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

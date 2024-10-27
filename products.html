@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Products - Andy07</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li class="hide" onclick="closeSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="black"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./forum.html">Forum</a></li>
+      </ul>
+      <ul>
+        <li><a class="logo" href="./index.html">Andy07</a></li>
+        <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="./blog.html">Blog</a></li>
+        <li class="hideOnMobile"><a href="./products.html">Products</a></li>
+        <li class="hideOnMobile"><a href="./about.html">About</a></li>
+        <li class="hideOnMobile"><a href="./forum.html">Forum</a></li>
+        <li class="hide" onclick="toggleSidebar()">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="black"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+        <section class="products">
+          <div class="product-container">
+            <div class="product-card">
+              <img src="product1.jpg" alt="Product 1" class="product-img" />
+              <h2>Product 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                incidunt a, adipisci quae vitae quaerat neque maxime molestias
+                cumque dicta quod maiores molestiae placeat voluptates unde
+                earum tempore alias tempora laudantium dignissimos nisi ea
+                similique. Atque eaque beatae eius dicta.
+              </p>
+              <a href="#" class="product-btn">Learn More</a>
+            </div>
+            <div class="product-card">
+              <img src="product2.jpg" alt="Product 2" class="product-img" />
+              <h2>Product 2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci nostrum expedita, fugiat iure voluptates quisquam
+                doloremque unde ipsa? Ullam tenetur ipsa ipsam quos, sit hic est
+                rem aspernatur delectus animi, fuga, vel ducimus tempore eum
+                optio voluptate a nesciunt incidunt?
+              </p>
+              <a href="#" class="product-btn">Learn More</a>
+            </div>
+            <!-- Tambahkan produk lainnya sesuai kebutuhan -->
+          </div>
+        </section>
+      </body>
+    </html>
+
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function closeSidebar() {
+        const close = document.querySelector(".sidebar");
+        close.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
